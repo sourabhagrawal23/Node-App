@@ -27,10 +27,11 @@ function rqListener(req,res) {
         return req.on('end', () => {
             const parsedBody = Buffer.concat(body).toString();
             const message = parsedBody.split('=')[1];
-            fs.writeFileSync('message.txt',message);
-            res.statusCode = 302;
-            res.setHeader('Location','/');
-            return res.end();
+            fs.writeFile('message.txt',message, err => {
+                res.statusCode = 302;
+                res.setHeader('Location','/');
+                return res.end();
+            });
         });
         
     }
