@@ -1,0 +1,23 @@
+{
+  "name": "node-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sourabhagrawal23/Node-App.git"
+  },
+  "author": "Sourabh Agrawal",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sourabhagrawal23/Node-App/issues"
+  },
+  "homepage": "https://github.com/sourabhagrawal23/Node-App#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  }
+}
